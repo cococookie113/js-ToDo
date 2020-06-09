@@ -7,11 +7,11 @@ function handleImgLoad() {
 }
 
 function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
-  image.onload = function () {
-    image.classList.add("bgImage");
-    body.prepend(image);
+  const bgimage = new Image();
+  bgimage.src = `images/${imgNumber + 1}.jpg`;
+  bgimage.onload = function () {
+    bgimage.classList.add("bgimage");
+    body.appendChild(bgimage);
   };
 }
 
