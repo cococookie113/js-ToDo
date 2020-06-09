@@ -40,16 +40,16 @@ body {
   display: block;
 }
 
-.toDoForm input {
+input {
   border: none;
   border-radius: 30px;
   padding: 5px;
   margin-bottom: 5px;
 }
-.toDoForm input::placeholder {
+input::placeholder {
   opacity: 0.6;
 }
-.toDoForm input:focus {
+input:focus {
   outline: none;
 }
 
