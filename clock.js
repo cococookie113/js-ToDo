@@ -1,6 +1,7 @@
 const toDoListli = localStorage.getItem("toDos");
 const AUDIO_LS = "audio";
 const isinputfocused = document.querySelector("input").focus;
+const classtime = document.querySelector(".classtime");
 
 function ringAlarm() {
   const currentAudio = localStorage.getItem(AUDIO_LS);
