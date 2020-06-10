@@ -7,22 +7,31 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="content-wrap">
-      <div class="js-clock clock">
-        <h1>00:00</h1>
+    <nav class="menu js-menu">
+      <div id="menu-left"></div>
+      <div id="menu-right">
+        ul.m
       </div>
-      <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
-      </form>
-      <h4 class="js-greetings greetings">1</h4>
-      <form class="js-toDoForm toDoForm">
-        <input type="text" placeholder="Write a to do" />
-      </form>
-      <ul class="js-toDoList toDoList"></ul>
-    </div>
+    </nav>
+    <div class="menu__white js-menu__white"></div>
     <div class="content-wrap">
-      <span class="js-weather weather"></span>
-      <span class="js-classtime"></span>
+      <div class="content-column">
+        <div class="js-clock clock">
+          <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+          <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings">1</h4>
+        <form class="js-toDoForm toDoForm">
+          <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList toDoList"></ul>
+        <h1 class="js-classtime classtime"></h1>
+      </div>
+      <div class="content-column">
+        <span class="js-weather weather"></span>
+      </div>
     </div>
 
     <audio id="bell">
@@ -33,5 +42,6 @@
     <script src="todo.js" type="text/javascript"></script>
     <script src="bg.js" type="text/javascript"></script>
     <script src="weather.js" type="text/javascript"></script>
+    <script src="menu.js" type="text/javascript"></script>
   </body>
 </html>
