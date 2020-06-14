@@ -1,7 +1,9 @@
-const AUDIO_LS = "audio";
-const CLASSTIME_LS = "classtime";
 const classtime = document.querySelector(".js-classtime");
 const toDoListli = localStorage.getItem("toDos");
+const isinputfocused = document.querySelector("input").focus;
+
+const AUDIO_LS = "audio";
+const CLASSTIME_LS = "classtime";
 
 function printClasstime() {
   innerClasstime = localStorage.getItem(CLASSTIME_LS);
@@ -101,7 +103,7 @@ function shouldLoadBell() {
 
 function loadBell() {
   saveAudio("bell");
-  setInterval(ring, 1000);
+  setInterval(ring, 100);
 }
 
 function init() {

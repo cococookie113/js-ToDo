@@ -90,3 +90,8 @@ input:focus {
     opacity: 1;
   }
 }
+
+#test {
+  width: 100px;
+  height: 100px;
+}

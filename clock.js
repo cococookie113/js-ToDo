@@ -1,5 +1,3 @@
-const isinputfocused = document.querySelector("input").focus;
-
 const clockContainer = document.querySelector(".js-clock"),
   clockTitle = clockContainer.querySelector("h1");
 

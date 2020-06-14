@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>ToDo||School alarm</title>
+    <title>ToDo || School alarm</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -11,19 +11,30 @@
       <div id="menu-left"></div>
       <div id="menu-right">
         <ul class="menu__list">
-          <li class="menu__list-item">about</li>
-          <li class="menu__list-item">sound</li>
-          <li class="menu__list-item">image</li>
+          <li class="menu__list-item" id="menu__list-about">about</li>
+          <li class="menu__list-item" id="menu__list-sound">sound</li>
+          <li class="menu__list-item" id="menu__list-image">image</li>
         </ul>
         <ul class="menu__page">
           <li class="menu__page-item" id="menu__about-page">
             <div class="menu__page-title">ABOUT</div>
+            <div class="page__description">
+              This page is made for practicing JS
+            </div>
           </li>
           <li class="menu__page-item" id="menu__sound-page">
             <div class="menu__page-title">SOUND</div>
           </li>
           <li class="menu__page-item" id="menu__image-page">
             <div class="menu__page-title">IMAGE</div>
+            <div class="page__description">
+              <input
+                type="file"
+                id="menu__image-selector"
+                accept=".jpg, .jpeg, .png"
+              />
+              <img id="test" />
+            </div>
           </li>
         </ul>
       </div>
@@ -52,11 +63,14 @@
     <audio id="bell">
       <source src="./audio/bell.mp3" "allowAutoplay" />
     </audio>
+    <script src="clock-ring.js" type="text/javascript"></script>
     <script src="clock.js" type="text/javascript"></script>
     <script src="greeting.js" type="text/javascript"></script>
     <script src="todo.js" type="text/javascript"></script>
     <script src="bg.js" type="text/javascript"></script>
     <script src="weather.js" type="text/javascript"></script>
     <script src="menu.js" type="text/javascript"></script>
+
+    <script src="menu-image.js" type="text/javascript"></script>
   </body>
 </html>
